@@ -9,4 +9,15 @@
             <?php include("inc/navbar.php") ?>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="row bg-dark mt-2">
+            <?php include("inc/footer.php") ?>
+        </div>
+    </div>
 </div>
+
+
+
+ </body>
+</html>
