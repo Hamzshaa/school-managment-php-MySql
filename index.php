@@ -7,8 +7,10 @@
     <div class="row">
         <div class="col-lg-12">
             <?php include("inc/navbar.php") ?>
+            <?php include("inc/slider.php") ?>
         </div>
     </div>
+
 
     <div class="container-fluid">
         <div class="row bg-dark mt-2">
