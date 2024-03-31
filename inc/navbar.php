@@ -13,7 +13,7 @@
         <a class="nav-link text-dark" href="about-us.php"><i class="mr-1 fa fa-laptop"></i>About us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-dark" href="#"><i class="mr-1 fa fa-user"></i>Student</a>
+        <a class="nav-link text-dark" href="student.php"><i class="mr-1 fa fa-user"></i>Student</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
