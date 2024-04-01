@@ -47,7 +47,7 @@
           <i class="mr-1 fa fa-cog"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="admin/login.php">Admin Login</a>
+          <a class="dropdown-item" href="#">Admin Login</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Student Login</a>
         </div>

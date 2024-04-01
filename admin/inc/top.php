@@ -23,6 +23,6 @@
         }
     </style>
 
-    <title>Trident Academy</title>
+    <title>Hello, world!</title>
   </head>
   <body>

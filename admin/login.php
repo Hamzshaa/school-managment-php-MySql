@@ -26,3 +26,23 @@
     <title>Trident Academy</title>
   </head>
   <body>
+    <div class="container-fluid">
+        <div class="row mt-5">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <form action="" method="post" class="">
+              <h2 class="text-danger">Please Sign In ( Admin Area )</h2><hr />
+              <label for="" class="text-danger">Username</label>
+              <input type="text" name="username" placeholder="USERNAME" required class="form-control"><br />
+
+              <label for="" class="text-danger">Password</label>
+              <input type="text" name="password" placeholder="PASSWORD" required class="form-control"><br />
+
+              <button type="submit" name="submit" class="btn btn-danger btn-block">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+    </div>
+  </body>
+</html>
