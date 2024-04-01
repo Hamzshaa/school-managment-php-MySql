@@ -1,3 +1,39 @@
+<?php 
+  ob_start();
+  session_start();
+  require_once('inc/db.php');
+  
+  if(isset($_POST['submit'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    
+    $username = mysqli_real_escape_string($con, $username);
+    $password = mysqli_real_escape_string($con, $password);
+    
+    $get_user = "SELECT * FROM users WHERE user_name = '$username' AND user_pass = '$password'";
+    $run_user = mysqli_query($con, $get_user);
+
+    
+    // echo "here is fine"
+    
+    if($run_user === false) {
+      echo "Query execution error: " . mysqli_error($con);
+    } else {
+      
+      $check = mysqli_num_rows($run_user);
+    if($check == 1){
+      $_SESSION['username'] = $username;
+      echo "<script>window.open('index.php', '_self')</script>";
+    }
+    else{
+      echo "<script>alert('Invalid username or password')</script>";
+    }
+    }
+
+  }
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,7 +47,7 @@
     <Link rel="stylesheet" href="css/custom.css" >
     <link href="https://fonts.googleapis.com/css?family=Raleway:300, 400" rel="stylesheet">
     
-    <script src="https://kit.fontawesome.com/c1b65d9ebe.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c1b65d9ebe.js" crossorigin="anonymous"></scrip>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
