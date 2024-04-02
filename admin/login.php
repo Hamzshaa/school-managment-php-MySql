@@ -12,9 +12,6 @@
     
     $get_user = "SELECT * FROM users WHERE user_name = '$username' AND user_pass = '$password'";
     $run_user = mysqli_query($con, $get_user);
-
-    
-    // echo "here is fine"
     
     if($run_user === false) {
       echo "Query execution error: " . mysqli_error($con);
